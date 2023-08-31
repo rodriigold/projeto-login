@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* 
+Tablet: < 768px e < 992px
+Desktop: < 992 e < 1200px
+Grandes Telas: < 1200 
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    body
+    {
+        background-image: linear-gradient(to bottom, var(--cor05) 60%, var(--cor04));
+    }
+    
+    main
+    {
+        flex-direction: row;
+    }
+
+    #login
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        height: 350px;
+    }
+
+    #form
+    {
+        width: 70%;
+        height: auto;
+    }
+
+    #img
+    {
+        width: 30%;
+        height: 100%;
+        background-size: contain;
+        background-position: center center;
+    }
+}
+
+@media screen and (min-width: 992px) 
+{
+    body
+    {
+        background-image: linear-gradient(to bottom, var(--cor05) 60%, var(--cor04));
+    }
+    
+    main
+    {
+        flex-direction: row;
+    }
+
+    #login
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 900px;
+        height: 350px;
+    }
+
+    #form
+    {
+        width: 50%;
+        height: auto;
+    }
+
+    #img
+    {
+        width: 50%;
+        height: 100%;
+        background-size: contain;
+        background-position: center center;
+    }
+}
