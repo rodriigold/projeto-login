@@ -43,17 +43,17 @@ main
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--cor05);
 
     width: 350px;
-    height: 550px;
+    height: 565px;
 
     border: 2px solid var(--cor01);
     border-radius: 25px;
     overflow: hidden;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
     transition: width .75s heigth .75s;
     transition-timing-function: ease;
 }
@@ -66,6 +66,13 @@ main
     background-position: center top;
     height: 40%;
     width: 100%;
+    margin-top: 20px;
+}
+
+#message
+{
+    margin: 15px 0;
+    font-size: 0.85em;
 }
 
 #form
@@ -74,4 +81,97 @@ main
     height: 60%;
     padding: 15px;
     color: var(--cor01);
+
+    text-align: center;
+    margin: 20px;
+}
+
+.material-symbols-outlined
+{
+    vertical-align: middle;
+}
+
+form .camp
+{
+    margin: 20px 0;
+}
+
+form .camp > input
+{
+    color: var(--cor01);
+    padding: 5px;
+    width: 80%;
+    border: none;
+    background-color: #00000000;
+    border-bottom: 1px solid var(--cor01);
+}
+
+form .camp > input::placeholder
+{
+    color: #d1cb9585
+}
+
+form .camp > input:focus-within
+{
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid var(--cor01);
+    outline: none;
+}
+
+form .rembutton > input[type=checkbox]
+{
+    display: none;
+}
+
+form .rembutton label::after
+{
+    content: '';
+    margin: 0 5px 4px 5px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--cor01);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form .rembutton > input[type=checkbox]:checked + label::after
+{
+    border-color: var(--cor02);
+    background-color: var(--cor02);
+    background-image: url(../imagens/check-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+form .botao 
+{
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: normal;
+    color: var(--cor01);
+    cursor: pointer;
+}
+
+form > input[type=submit]
+{
+    display: block;
+    font-size: 1em;
+    margin: auto;
+    cursor: pointer;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    background-color: var(--cor02);
+    font-weight: bold;
+    color: var(--cor01);
+
+    border-radius: 25px;
+    border: none;
+
+    width: 80%;
+    height: 3em;
+    padding: 10px;
 }

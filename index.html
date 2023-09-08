@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/medias.css">
@@ -24,11 +25,31 @@
             <div id="form">
 
                 <h1>Login</h1>
-                <p>
+                <p id="message">
                     Seja bem vindo(a) novamente! Faça login para acessar sua conta e fazer as configurações no seu ambiente.
                 </p>
 
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post" autocomplete="on">
+
+                    <div class="camp">
+                        <label for="ilogin"> <span class="material-symbols-outlined">account_circle</span> </label>
+                        <input type="email" name="login" id="ilogin" placeholder="Email" autocomplete="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </div>
+                    <div class="camp">
+                        <label for="isenha"> <span class="material-symbols-outlined">lock</span> </label>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" minlength="8" required>
+                    </div>
+
+                    <div class="rembutton">
+                        <input type="checkbox" name="remember" id="iremember">
+                        <label for="iremember" class="botao">Lembrar de mim</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+
+                    <a href="link.html" class="botao"> Esqueci minha senha <span class="material-symbols-outlined">mail</span> </a>
+
+                </form>
 
             </div>
 
