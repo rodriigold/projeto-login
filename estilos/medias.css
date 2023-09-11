@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root
+{
+    --cor01: #d1cb95;
+    --cor02: #40985e;
+    --cor03: #1a644e;
+    --cor04: #04373b;
+    --cor05: #0a1a2f;
+}
+
 /* 
 Tablet: < 768px e < 992px
 Desktop: < 992 e < 1200px
@@ -43,6 +52,18 @@ Grandes Telas: < 1200
         background-size: contain;
         background-position: center center;
     }
+
+    form > input[type=submit]:hover
+    {
+        background-color: var(--cor03);
+        transition-duration: .25s;
+    }
+
+    .botao:hover
+    {
+        color: #f3ffbd;
+        transition-duration: .25s;
+    }
 }
 
 @media screen and (min-width: 992px) 
@@ -81,5 +102,17 @@ Grandes Telas: < 1200
         height: 100%;
         background-size: contain;
         background-position: center center;
+    }
+
+    form > input[type=submit]:hover
+    {
+        background-color: var(--cor03);
+        transition-duration: .25s;
+    }
+
+    .botao:hover
+    {
+        color: #f3ffbd;
+        transition-duration: .25s;
     }
 }
